@@ -5,7 +5,7 @@ import './globals.css'
 
 export const metadata: Metadata = {
   title: 'Business Services Technology',
-  description: 'Les meilleurs services technologiques pour votre entreprise',
+  description: 'Votre partenaire unique pour la vente, la maintenance, l\'impression et le traitement de texte, offrant des solutions informatiques complètes pour particuliers et professionnels.',
 }
 
 export default function RootLayout({

@@ -11,7 +11,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
-              <div className="text-2xl font-bold">BST</div>
+              <div className="text-2xl font-bold">Business Services Technology</div>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
               <a href="#services" className="hover:text-accent transition-colors">
@@ -33,7 +33,7 @@ export default function HomePage() {
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center space-x-2 text-sm">
                 <Phone className="h-4 w-4" />
-                <span>+33 1 23 45 67 89</span>
+                <span>+33 6 60 02 42 62</span>
               </div>
               <Button variant="secondary" size="sm">
                 Devis Gratuit
@@ -84,7 +84,7 @@ export default function HomePage() {
             <div className="relative">
               <div className="bg-card rounded-2xl p-8 shadow-lg">
                 <img
-                  src="/professional-it-technician-smiling-with-computer-e.png"
+                  src="/bst.jpg"
                   alt="Technicien informatique professionnel"
                   className="w-full h-auto rounded-lg"
                 />
@@ -104,14 +104,14 @@ export default function HomePage() {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
               <CardHeader className="text-center">
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <ShoppingCart className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle>Boutique en ligne</CardTitle>
-                <CardDescription>Ordinateurs, imprimantes, accessoires neufs et reconditionnés</CardDescription>
+                <CardTitle>Vente en ligne</CardTitle>
+                <CardDescription>Ordinateurs et matériels informatiques d'occasion, reconditionnés.</CardDescription>
               </CardHeader>
             </Card>
 
@@ -120,8 +120,8 @@ export default function HomePage() {
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Wrench className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle>Réparation</CardTitle>
-                <CardDescription>Diagnostic, réparation et maintenance de tous vos équipements</CardDescription>
+                <CardTitle>Maintenance en Informatique</CardTitle>
+                <CardDescription>Réparation pc et accessoires informatiques</CardDescription>
               </CardHeader>
             </Card>
 
@@ -130,8 +130,8 @@ export default function HomePage() {
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Printer className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle>Impression personnalisée</CardTitle>
-                <CardDescription>T-shirts, tasses, objets personnalisés pour vos événements</CardDescription>
+                <CardTitle>Sublimation & Impression Grand Format</CardTitle>
+                <CardDescription>Sublimation : Impression sur Objets : T-shirts, casquettes, Tasses, etc. Impression Grand Format affiche publicitaire, Roll up, Kakémono,...</CardDescription>
               </CardHeader>
             </Card>
 
@@ -140,8 +140,28 @@ export default function HomePage() {
                 <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
                   <Monitor className="h-8 w-8 text-primary" />
                 </div>
-                <CardTitle>Support technique</CardTitle>
-                <CardDescription>Assistance et conseil pour tous vos projets informatiques</CardDescription>
+                <CardTitle>Traitement de textes</CardTitle>
+                <CardDescription>Conception Flyers, Calendrier, Rapports,..</CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Badge className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Impression des Badges plastiques</CardTitle>
+                <CardDescription>Badges plastiques personnalisés pour événements, entreprises, etc.</CardDescription>
+              </CardHeader>
+            </Card>
+
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Users className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Informatique de proximité</CardTitle>
+                <CardDescription>Prestation à domicile ou en Entreprise pour particuliers et professionnels.</CardDescription>
               </CardHeader>
             </Card>
           </div>
@@ -172,9 +192,11 @@ export default function HomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <Badge variant="secondary">À partir de 299€</Badge>
-                  <Button variant="outline" size="sm">
-                    Voir plus
-                  </Button>
+                  <a href="/boutique/ordinateurs-portables">
+                    <Button variant="outline" size="sm">
+                      Voir plus
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -192,9 +214,11 @@ export default function HomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <Badge variant="secondary">À partir de 399€</Badge>
-                  <Button variant="outline" size="sm">
-                    Voir plus
-                  </Button>
+                  <a href="/boutique/ordinateurs-de-bureau">
+                    <Button variant="outline" size="sm">
+                      Voir plus
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -212,9 +236,11 @@ export default function HomePage() {
               <CardContent>
                 <div className="flex items-center justify-between">
                   <Badge variant="secondary">À partir de 19€</Badge>
-                  <Button variant="outline" size="sm">
-                    Voir plus
-                  </Button>
+                  <a href="/boutique/accessoires">
+                    <Button variant="outline" size="sm">
+                      Voir plus
+                    </Button>
+                  </a>
                 </div>
               </CardContent>
             </Card>
@@ -235,15 +261,15 @@ export default function HomePage() {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <Phone className="h-5 w-5 text-accent" />
-                  <span>+33 1 23 45 67 89</span>
+                  <span>+33 6 60 02 42 62</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="h-5 w-5 text-accent" />
-                  <span>contact@bst.fr</span>
+                  <span>contact.bst44@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="h-5 w-5 text-accent" />
-                  <span>123 Rue de l'Exemple, 75000 Paris</span>
+                  <span>69 Bis Rue du Bêle 44300 Nantes - France</span>
                 </div>
               </div>
             </div>
@@ -300,19 +326,20 @@ export default function HomePage() {
             <div>
               <h4 className="font-semibold mb-4">Services</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>Vente d'équipements</li>
-                <li>Réparation</li>
-                <li>Impression personnalisée</li>
-                <li>Support technique</li>
+                <li>Vente en ligne</li>
+                <li>Maintenance en Informatique</li>
+                <li>Sublimation & Impression Grand Format</li>
+                <li>Traitement de textes</li>
+                <li>Impression des Badges plastiques</li>
+                <li>Informatique de proximité</li>
               </ul>
             </div>
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>+33 1 23 45 67 89</li>
-                <li>contact@bst.fr</li>
-                <li>123 Rue de l'Exemple</li>
-                <li>75000 Paris</li>
+                <li>+33 6 60 02 42 62</li>
+                <li>contact.bst44@gmail.com</li>
+                <li>69 Bis Rue du Bêle 44300 Nantes - France</li>
               </ul>
             </div>
             <div>

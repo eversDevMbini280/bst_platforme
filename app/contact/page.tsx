@@ -11,7 +11,7 @@ export default function ContactPage() {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-4">
               <a href="/" className="text-2xl font-bold hover:text-accent transition-colors">
-                TechServices Pro
+                Business Services Technology
               </a>
             </div>
             <nav className="hidden md:flex items-center space-x-6">
@@ -34,7 +34,7 @@ export default function ContactPage() {
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center space-x-2 text-sm">
                 <Phone className="h-4 w-4" />
-                <span>02 85 52 83 62</span>
+                <span>+33 6 60 02 42 62</span>
               </div>
               <Button variant="secondary" size="sm">
                 Devis Gratuit
@@ -83,7 +83,7 @@ export default function ContactPage() {
                 Appelez-nous directement pour un conseil immédiat
               </CardDescription>
               <div className="space-y-2">
-                <p className="text-2xl font-bold text-primary">02 85 52 83 62</p>
+                <p className="text-2xl font-bold text-primary">+33 6 60 02 42 62</p>
                 <p className="text-sm text-muted-foreground">Lun-Ven: 9h-18h | Sam: 9h-17h</p>
               </div>
             </Card>
@@ -95,7 +95,7 @@ export default function ContactPage() {
               <CardTitle className="mb-4">Email</CardTitle>
               <CardDescription className="text-lg mb-4">Écrivez-nous pour un devis détaillé</CardDescription>
               <div className="space-y-2">
-                <p className="text-lg font-semibold text-primary">contact@techservices-pro.fr</p>
+                <p className="text-lg font-semibold text-primary">contact.bst44@gmail.com</p>
                 <p className="text-sm text-muted-foreground">Réponse sous 24h</p>
               </div>
             </Card>
@@ -107,8 +107,8 @@ export default function ContactPage() {
               <CardTitle className="mb-4">Adresse</CardTitle>
               <CardDescription className="text-lg mb-4">Venez nous rendre visite en magasin</CardDescription>
               <div className="space-y-2">
-                <p className="font-semibold">123 Rue de la Technologie</p>
-                <p className="font-semibold">44000 Nantes</p>
+                <p className="font-semibold">69 Bis Rue du Bêle</p>
+                <p className="font-semibold">44300 Nantes - France</p>
                 <p className="text-sm text-muted-foreground">Parking gratuit disponible</p>
               </div>
             </Card>
@@ -319,7 +319,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">TechServices Pro</h3>
+              <h3 className="text-xl font-bold mb-4">Business Services Technology</h3>
               <p className="text-sm opacity-80">
                 Votre partenaire informatique de confiance à Nantes depuis plus de 10 ans.
               </p>
@@ -336,10 +336,10 @@ export default function ContactPage() {
             <div>
               <h4 className="font-semibold mb-4">Contact</h4>
               <ul className="space-y-2 text-sm opacity-80">
-                <li>02 85 52 83 62</li>
-                <li>contact@techservices-pro.fr</li>
-                <li>123 Rue de la Technologie</li>
-                <li>44000 Nantes</li>
+                <li>+33 6 60 02 42 62</li>
+                <li>contact.bst44@gmail.com</li>
+                <li>69 Bis Rue du Bêle</li>
+                <li>44300 Nantes - France</li>
               </ul>
             </div>
             <div>
@@ -352,7 +352,7 @@ export default function ContactPage() {
             </div>
           </div>
           <div className="border-t border-background/20 mt-8 pt-8 text-center text-sm opacity-60">
-            <p>&copy; 2024 TechServices Pro. Tous droits réservés.</p>
+            <p>&copy; 2024 Business Services Technology. Tous droits réservés.</p>
           </div>
         </div>
       </footer>
