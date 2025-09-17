@@ -6,44 +6,6 @@ import { Phone, Wrench, Monitor, Smartphone, Printer, HardDrive, Cpu, CheckCircl
 export default function ReparationPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <a href="/" className="text-2xl font-bold hover:text-accent transition-colors">
-                Business Services Technology
-              </a>
-            </div>
-            <nav className="hidden md:flex items-center space-x-6">
-              <a href="/#services" className="hover:text-accent transition-colors">
-                Nos Services
-              </a>
-              <a href="/#boutique" className="hover:text-accent transition-colors">
-                Boutique
-              </a>
-              <a href="/reparation" className="text-accent font-medium">
-                Réparation
-              </a>
-              <a href="/impression" className="hover:text-accent transition-colors">
-                Impression
-              </a>
-              <a href="/contact" className="hover:text-accent transition-colors">
-                Contact
-              </a>
-            </nav>
-            <div className="flex items-center space-x-4">
-              <div className="hidden lg:flex items-center space-x-2 text-sm">
-                <Phone className="h-4 w-4" />
-                <span>+33 6 60 02 42 62</span>
-              </div>
-              <Button variant="secondary" size="sm">
-                Devis Gratuit
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">

@@ -2,47 +2,11 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Phone, Mail, MapPin, Monitor, Wrench, Printer, ShoppingCart, Users, Clock, Award } from "lucide-react"
+import Link from "next/link"
 
 export default function HomePage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <div className="text-2xl font-bold">Business Services Technology</div>
-            </div>
-            <nav className="hidden md:flex items-center space-x-6">
-              <a href="#services" className="hover:text-accent transition-colors">
-                Nos Services
-              </a>
-              <a href="#boutique" className="hover:text-accent transition-colors">
-                Boutique
-              </a>
-              <a href="/reparation" className="hover:text-accent transition-colors">
-                Réparation
-              </a>
-              <a href="/impression" className="hover:text-accent transition-colors">
-                Impression
-              </a>
-              <a href="/contact" className="hover:text-accent transition-colors">
-                Contact
-              </a>
-            </nav>
-            <div className="flex items-center space-x-4">
-              <div className="hidden lg:flex items-center space-x-2 text-sm">
-                <Phone className="h-4 w-4" />
-                <span>+33 6 60 02 42 62</span>
-              </div>
-              <Button variant="secondary" size="sm">
-                Devis Gratuit
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
         <div className="container mx-auto px-4">
@@ -84,8 +48,8 @@ export default function HomePage() {
             <div className="relative">
               <div className="bg-card rounded-2xl p-8 shadow-lg">
                 <img
-                  src="/bst.jpg"
-                  alt="Technicien informatique professionnel"
+                  src="/acceuil.jpg"
+                  alt="photo d'une dame de l'acceuil"
                   className="w-full h-auto rounded-lg"
                 />
               </div>
@@ -105,65 +69,77 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center">
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <ShoppingCart className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle>Vente en ligne</CardTitle>
-                <CardDescription>Ordinateurs et matériels informatiques d'occasion, reconditionnés.</CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/boutique">
+              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
+                <CardHeader className="text-center">
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <ShoppingCart className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle>Vente en ligne</CardTitle>
+                  <CardDescription>Ordinateurs et matériels informatiques d'occasion, reconditionnés.</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center">
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Wrench className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle>Maintenance en Informatique</CardTitle>
-                <CardDescription>Réparation pc et accessoires informatiques</CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/reparation">
+              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
+                <CardHeader className="text-center">
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Wrench className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle>Maintenance en Informatique</CardTitle>
+                  <CardDescription>Réparation pc et accessoires informatiques</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center">
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Printer className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle>Sublimation & Impression Grand Format</CardTitle>
-                <CardDescription>Sublimation : Impression sur Objets : T-shirts, casquettes, Tasses, etc. Impression Grand Format affiche publicitaire, Roll up, Kakémono,...</CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/impression">
+              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
+                <CardHeader className="text-center">
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Printer className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle>Sublimation & Impression Grand Format</CardTitle>
+                  <CardDescription>Sublimation : Impression sur Objets : T-shirts, casquettes, Tasses, etc. Impression Grand Format affiche publicitaire, Roll up, Kakémono,...</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center">
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Monitor className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle>Traitement de textes</CardTitle>
-                <CardDescription>Conception Flyers, Calendrier, Rapports,..</CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/impression">
+              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
+                <CardHeader className="text-center">
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Monitor className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle>Traitement de textes</CardTitle>
+                  <CardDescription>Conception Flyers, Calendrier, Rapports,..</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center">
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Badge className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle>Impression des Badges plastiques</CardTitle>
-                <CardDescription>Badges plastiques personnalisés pour événements, entreprises, etc.</CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/impression/badges">
+              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
+                <CardHeader className="text-center">
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group.hover:bg-primary/20 transition-colors">
+                    <Badge className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle>Impression des Badges plastiques</CardTitle>
+                  <CardDescription>Badges plastiques personnalisés pour événements, entreprises, etc.</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
-            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
-              <CardHeader className="text-center">
-                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                  <Users className="h-8 w-8 text-primary" />
-                </div>
-                <CardTitle>Informatique de proximité</CardTitle>
-                <CardDescription>Prestation à domicile ou en Entreprise pour particuliers et professionnels.</CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/contact">
+              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
+                <CardHeader className="text-center">
+                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                    <Users className="h-8 w-8 text-primary" />
+                  </div>
+                  <CardTitle>Informatique de proximité</CardTitle>
+                  <CardDescription>Prestation à domicile ou en Entreprise pour particuliers et professionnels.</CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>
@@ -179,7 +155,7 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="border border-gray-200 dark:border-gray-800">
               <CardHeader>
                 <img
                   src="/modern-laptop-computer.png"
@@ -201,7 +177,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border border-gray-200 dark:border-gray-800">
               <CardHeader>
                 <img
                   src="/desktop-computer-setup.png"
@@ -223,7 +199,7 @@ export default function HomePage() {
               </CardContent>
             </Card>
 
-            <Card>
+            <Card className="border border-gray-200 dark:border-gray-800">
               <CardHeader>
                 <img
                   src="/printer-and-computer-accessories.png"
@@ -274,7 +250,7 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-card text-card-foreground p-8 rounded-2xl">
+            <div className="bg-card text-card-foreground p-8 rounded-2xl border border-gray-200 dark:border-gray-800">
               <h3 className="text-2xl font-bold mb-6">Demande de devis</h3>
               <form className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">

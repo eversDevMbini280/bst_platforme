@@ -5,44 +5,6 @@ import { Phone, Mail, MapPin, Clock, Car, MessageCircle, Users, Award } from "lu
 export default function ContactPage() {
   return (
     <div className="min-h-screen bg-background">
-      {/* Header */}
-      <header className="bg-primary text-primary-foreground">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-4">
-              <a href="/" className="text-2xl font-bold hover:text-accent transition-colors">
-                Business Services Technology
-              </a>
-            </div>
-            <nav className="hidden md:flex items-center space-x-6">
-              <a href="/#services" className="hover:text-accent transition-colors">
-                Nos Services
-              </a>
-              <a href="/#boutique" className="hover:text-accent transition-colors">
-                Boutique
-              </a>
-              <a href="/reparation" className="hover:text-accent transition-colors">
-                Réparation
-              </a>
-              <a href="/impression" className="hover:text-accent transition-colors">
-                Impression
-              </a>
-              <a href="/contact" className="text-accent font-medium">
-                Contact
-              </a>
-            </nav>
-            <div className="flex items-center space-x-4">
-              <div className="hidden lg:flex items-center space-x-2 text-sm">
-                <Phone className="h-4 w-4" />
-                <span>+33 6 60 02 42 62</span>
-              </div>
-              <Button variant="secondary" size="sm">
-                Devis Gratuit
-              </Button>
-            </div>
-          </div>
-        </div>
-      </header>
 
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-primary/5 to-accent/5 py-20">
@@ -74,7 +36,7 @@ export default function ContactPage() {
       <section className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-3 gap-8 mb-16">
-            <Card className="text-center p-8">
+            <Card className="text-center p-8 border border-gray-200 dark:border-gray-800">
               <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <Phone className="h-8 w-8 text-primary" />
               </div>
@@ -88,7 +50,7 @@ export default function ContactPage() {
               </div>
             </Card>
 
-            <Card className="text-center p-8">
+            <Card className="text-center p-8 border border-gray-200 dark:border-gray-800">
               <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <Mail className="h-8 w-8 text-primary" />
               </div>
@@ -100,7 +62,7 @@ export default function ContactPage() {
               </div>
             </Card>
 
-            <Card className="text-center p-8">
+            <Card className="text-center p-8 border border-gray-200 dark:border-gray-800">
               <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-6">
                 <MapPin className="h-8 w-8 text-primary" />
               </div>
@@ -121,7 +83,7 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12">
             {/* Formulaire */}
-            <Card className="p-8">
+            <Card className="p-8 border border-gray-200 dark:border-gray-800">
               <CardHeader className="pb-6">
                 <CardTitle className="text-2xl">Envoyez-nous un message</CardTitle>
                 <CardDescription>Remplissez ce formulaire et nous vous recontacterons rapidement</CardDescription>
@@ -200,7 +162,7 @@ export default function ContactPage() {
 
             {/* Informations pratiques */}
             <div className="space-y-8">
-              <Card className="p-6">
+              <Card className="p-6 border border-gray-200 dark:border-gray-800">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3">
                     <Clock className="h-6 w-6 text-primary" />
@@ -226,7 +188,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="p-6">
+              <Card className="p-6 border border-gray-200 dark:border-gray-800">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3">
                     <Car className="h-6 w-6 text-primary" />
@@ -246,7 +208,7 @@ export default function ContactPage() {
                 </CardContent>
               </Card>
 
-              <Card className="p-6">
+              <Card className="p-6 border border-gray-200 dark:border-gray-800">
                 <CardHeader className="pb-4">
                   <div className="flex items-center space-x-3">
                     <Users className="h-6 w-6 text-primary" />
@@ -279,7 +241,7 @@ export default function ContactPage() {
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-            <Card className="p-6">
+            <Card className="p-6 border border-gray-200 dark:border-gray-800">
               <CardTitle className="mb-3">Combien coûte un diagnostic ?</CardTitle>
               <CardDescription>
                 Le diagnostic est entièrement gratuit et sans engagement. Nous analysons votre équipement et vous
@@ -287,7 +249,7 @@ export default function ContactPage() {
               </CardDescription>
             </Card>
 
-            <Card className="p-6">
+            <Card className="p-6 border border-gray-200 dark:border-gray-800">
               <CardTitle className="mb-3">Quels sont vos délais de réparation ?</CardTitle>
               <CardDescription>
                 En moyenne 48h pour les réparations courantes. Les interventions complexes peuvent prendre 3-5 jours
@@ -295,7 +257,7 @@ export default function ContactPage() {
               </CardDescription>
             </Card>
 
-            <Card className="p-6">
+            <Card className="p-6 border border-gray-200 dark:border-gray-800">
               <CardTitle className="mb-3">Proposez-vous un service à domicile ?</CardTitle>
               <CardDescription>
                 Oui, nous nous déplaçons chez vous pour les dépannages urgents et l'installation d'équipements. Tarif
@@ -303,7 +265,7 @@ export default function ContactPage() {
               </CardDescription>
             </Card>
 
-            <Card className="p-6">
+            <Card className="p-6 border border-gray-200 dark:border-gray-800">
               <CardTitle className="mb-3">Acceptez-vous les paiements en plusieurs fois ?</CardTitle>
               <CardDescription>
                 Oui, nous proposons le paiement en 3 fois sans frais pour les achats supérieurs à 300€. Autres solutions
