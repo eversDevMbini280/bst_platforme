@@ -69,77 +69,95 @@ export default function HomePage() {
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Link href="/boutique">
-              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
-                <CardHeader className="text-center">
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <ShoppingCart className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle>Vente en ligne</CardTitle>
-                  <CardDescription>Ordinateurs et matériels informatiques d'occasion, reconditionnés.</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800 flex flex-col">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <ShoppingCart className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Vente en ligne</CardTitle>
+                <CardDescription>Ordinateurs et matériels informatiques d'occasion, reconditionnés.</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end justify-center">
+                <Link href="/boutique" passHref>
+                  <Button variant="outline">Voir la boutique</Button>
+                </Link>
+              </CardContent>
+            </Card>
 
-            <Link href="/reparation">
-              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
-                <CardHeader className="text-center">
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Wrench className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle>Maintenance en Informatique</CardTitle>
-                  <CardDescription>Réparation pc et accessoires informatiques</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800 flex flex-col">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Wrench className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Maintenance en Informatique</CardTitle>
+                <CardDescription>Réparation pc et accessoires informatiques</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end justify-center">
+                <Link href="/reparation" passHref>
+                  <Button variant="outline">Voir les services</Button>
+                </Link>
+              </CardContent>
+            </Card>
 
-            <Link href="/impression">
-              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
-                <CardHeader className="text-center">
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Printer className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle>Sublimation & Impression Grand Format</CardTitle>
-                  <CardDescription>Sublimation : Impression sur Objets : T-shirts, casquettes, Tasses, etc. Impression Grand Format affiche publicitaire, Roll up, Kakémono,...</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800 flex flex-col">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Printer className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Sublimation & Impression Grand Format</CardTitle>
+                <CardDescription>Sublimation : Impression sur Objets : T-shirts, casquettes, Tasses, etc. Impression Grand Format affiche publicitaire, Roll up, Kakémono,...</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end justify-center">
+                <Link href="/impression" passHref>
+                  <Button variant="outline">Voir les services</Button>
+                </Link>
+              </CardContent>
+            </Card>
 
-            <Link href="/impression">
-              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
-                <CardHeader className="text-center">
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Monitor className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle>Traitement de textes</CardTitle>
-                  <CardDescription>Conception Flyers, Calendrier, Rapports,..</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800 flex flex-col">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Monitor className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Traitement de textes</CardTitle>
+                <CardDescription>Conception Flyers, Calendrier, Rapports,..</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end justify-center">
+                <Link href="/impression" passHref>
+                  <Button variant="outline">En savoir plus</Button>
+                </Link>
+              </CardContent>
+            </Card>
 
-            <Link href="/impression/badges">
-              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
-                <CardHeader className="text-center">
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group.hover:bg-primary/20 transition-colors">
-                    <Badge className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle>Impression des Badges plastiques</CardTitle>
-                  <CardDescription>Badges plastiques personnalisés pour événements, entreprises, etc.</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800 flex flex-col">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Badge className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Impression des Badges plastiques</CardTitle>
+                <CardDescription>Badges plastiques personnalisés pour événements, entreprises, etc.</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end justify-center">
+                <Link href="/impression/badges" passHref>
+                  <Button variant="outline">Commander des badges</Button>
+                </Link>
+              </CardContent>
+            </Card>
 
-            <Link href="/contact">
-              <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800">
-                <CardHeader className="text-center">
-                  <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
-                    <Users className="h-8 w-8 text-primary" />
-                  </div>
-                  <CardTitle>Informatique de proximité</CardTitle>
-                  <CardDescription>Prestation à domicile ou en Entreprise pour particuliers et professionnels.</CardDescription>
-                </CardHeader>
-              </Card>
-            </Link>
+            <Card className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1 border border-gray-200 dark:border-gray-800 flex flex-col">
+              <CardHeader className="text-center">
+                <div className="mx-auto bg-primary/10 p-4 rounded-full w-16 h-16 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors">
+                  <Users className="h-8 w-8 text-primary" />
+                </div>
+                <CardTitle>Informatique de proximité</CardTitle>
+                <CardDescription>Prestation à domicile ou en Entreprise pour particuliers et professionnels.</CardDescription>
+              </CardHeader>
+              <CardContent className="flex-grow flex items-end justify-center">
+                <Link href="/contact" passHref>
+                  <Button variant="outline">Nous contacter</Button>
+                </Link>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
